@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleImageView">
+        <attr name="src" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="RoundButton">
+        <!-- 背景色 -->
+        <attr name="btnSolidColor" format="color"/>
+        <!-- 边框色 -->
+        <attr name="btnStrokeColor" format="color"/>
+        <!-- 边框厚度 -->
+        <attr name="btnStrokeWidth" format="dimension"/>
+        <!-- 边框虚线长度 -->
+        <attr name="btnStrokeDashWidth" format="dimension"/>
+        <!-- 边框虚线间隙 -->
+        <attr name="btnStrokeDashGap" format="dimension"/>
+        <!-- 圆角半径，stadium 表示半径为 min(height,width) / 2-->
+        <attr name="btnCornerRadius" format="dimension">
+            <enum name="stadium" value="-1"/>
+        </attr>
+        <!-- 自动计算按下(pressed)状态颜色的系数, 值为 0 时不自动计算 -->
+        <attr name="btnPressedRatio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="RememberEditText">
+        <!-- auto fill in cache, by default true -->
+        <attr name="autoFill" format="boolean" />
+        <!-- auto save to cache, by default true -->
+        <attr name="autoSave" format="boolean" />
+        <!-- dropdown icon to choose between cache values, by default use abc_spinner_mtrl_am_alpha -->
+        <attr name="dropDownIcon" format="reference" />
+        <!-- delete icon to delete cache value, by default use abc_ic_clear_mtrl_alpha -->
+        <attr name="deleteIcon" format="reference" />
+        <!-- id of cache, will use view id if not set -->
+        <attr name="rememberId" format="string" />
+        <!-- count of cache to keep, by default 3 -->
+        <attr name="rememberCount" format="integer" />
+    </declare-styleable>
+</resources>
